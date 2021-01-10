@@ -1,0 +1,17 @@
+<div [ngClass]="fieldContent.appearance">
+    <div *ngIf="fieldContent.props">
+        <h5 *ngIf="fieldContent.props.headerType === 'heading5'" [style.fontWeight]="fieldContent.props.fontWeight">{{ fieldContent.props.text }}</h5>
+        <img *ngIf="fieldContent.props.image" src="{{fieldContent.props.image}}">
+        <label *ngIf="fieldContent.props.contentType === 'content3'" [style.fontWeight]="fieldContent.props.fontWeight"
+        [style.textAlign]="fieldContent.props.textAlign"
+        [style.color]="fieldContent.props.color"  >{{ fieldContent.props.text }}</label>
+
+        
+    </div>
+</div>
+
+<div class="app-content" *ngFor="let child of fieldContent.content">
+    <app-child-content [fieldContent]="child"></app-child-content>
+</div>
+
+<textarea *ngIf="fieldContent.appearance === 'ff-text-area'" placeholder="{{fieldContent.props.placeholder}}" maxlength="fieldContent.props.limit"></textarea>

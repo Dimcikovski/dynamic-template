@@ -1,0 +1,6 @@
+<div class="main-body" *ngIf="apiData">
+    <div class="app-content" *ngFor="let data of apiData.content">
+        <app-child-content [fieldContent]="data"></app-child-content>
+    </div>
+</div>
+

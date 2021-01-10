@@ -1,0 +1,77 @@
+{
+    "data" : [{
+        "homePage": "Home Page",
+        "content": [
+           {
+             "appearance":"ff-header",
+             "props": {
+               "text":"Welcome to FastForward.ai!",
+               "headerType":"heading5",
+               "fontWeight":"normal"
+             }
+           },
+          {
+            "appearance":"ff-header",
+            "props": {
+              "image":"https://unicphscat.blob.core.windows.net/images-prd/s2702801.png"    
+            },
+            "content": [
+              {
+                "appearance":"ff-header",
+                "props": {
+                  "text":"Title goes here",
+                  "contentType":"content3",
+                  "fontWeight":"bold",
+                  "textAlign": "left"
+                }
+              },
+              {
+                "appearance":"ff-header",
+                "props": {
+                  "text":"• Description 1&lt;br/&gt;• Description 2&lt;br/&gt;• Description 3",
+                  "contentType":"content3",
+                  "fontWeight":"normal",
+                  "textAlign": "left",
+                  "color": "#7D7D7D"
+                }
+              }
+            ]
+          },
+          {
+            "appearance":"ff-text-area",
+            "props": {
+              "placeholder":"Write your review here (optional)",
+              "textLimit":500
+            }
+          },
+          {
+            "appearance":"ff-button",
+            "props": {
+              "element": {
+                "content": {
+                  "payload":"example_payload",
+                  "text":"Submit"
+                },
+                "appearance":"blue",
+                "disabled": false
+              }
+            }
+          },
+          {
+            "appearance":"ff-button",
+            "props": {
+              "element": {
+                "content": {
+                  "payload":"example_payload",
+                  "text":"Not now"
+                },
+                "appearance":"blue outline",
+                "disabled": false
+              }
+            }
+          }
+        ]
+      }
+      ]
+}
+
