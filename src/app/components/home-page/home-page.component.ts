@@ -9,7 +9,7 @@ import { ApiService } from 'src/app/service/api-service.service';
   styleUrls: ['./home-page.component.css'],
 })
 export class HomePageComponent implements OnInit {
-  private apiData: ApiResponse
+  public apiData: ApiResponse
   constructor(public apiService: ApiService, public titleService: Title) {}
 
   ngOnInit(): void {

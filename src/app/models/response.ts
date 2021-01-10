@@ -4,7 +4,7 @@ export interface ApiResponse {
 }
 
 export interface TemplateContent {
-    apperance: string,
+    appearance: string,
     content?: TemplateContent[];
     props: any
 }
