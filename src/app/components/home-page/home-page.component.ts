@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
+import { ApiResponse } from 'src/app/models/response';
 import { ApiService } from 'src/app/service/api-service.service';
 
 @Component({
